@@ -24,6 +24,7 @@ class FullW extends StatelessWidget {
           itemBuilder: (context, index) {
             return ListTile(
               title: Text(datas[index]),
+              subtitle: Text(index.toRadixString(16)),
             );
           },
         ),
