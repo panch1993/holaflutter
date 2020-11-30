@@ -1,16 +1,14 @@
 import 'package:flutter/material.dart';
 
-void main() =>
-    runApp(FullW(
+void main() => runApp(FullW(
       datas: List<String>.generate(100, (index) => "Index $index"),
     ));
-
 
 //12 参数
 class FullW extends StatelessWidget {
   final List<String> datas;
 
-  FullW({Key key, @required this.datas}) :super(key: key);
+  FullW({Key key, @required this.datas}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -31,9 +29,7 @@ class FullW extends StatelessWidget {
       ),
     );
   }
-
 }
-
 
 //10 LISTVIEW
 class HolaListView extends StatelessWidget {
@@ -78,14 +74,13 @@ class HoriList extends StatelessWidget {
           children: <Widget>[
             Image.network(
               "https://i2.hdslb.com/bfs/archive/2a85077e14630ddb58f0b56d24c0fef8a7517c6f.png@336w_190h.webp",
-            ), Image.network(
+            ),
+            Image.network(
               "https://dss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3302399998,3216746631&fm=26&gp=0.jpg",
             ),
           ],
-        )
-    );
+        ));
   }
-
 }
 
 //09 IMAGE
@@ -140,7 +135,7 @@ class Hola extends StatelessWidget {
               margin: EdgeInsets.fromLTRB(0, 0, 15, 0),
               //color: Colors.lightBlue,
               decoration: BoxDecoration(
-                gradient: LinearGradient(colors: [Colors.teal, Colors.amber]),
+                // gradient: LinearGradient(colors: [Colors.teal, Colors.amber]),
                 border: Border.all(color: Colors.deepOrangeAccent, width: 4),
               ),
             )),
@@ -166,12 +161,11 @@ class HolaText extends StatelessWidget {
             // maxLines: 2,
             overflow: TextOverflow.fade,
             style: TextStyle(
-              fontSize: 25.0,
-              color: Colors.teal,
-              decoration: TextDecoration.underline,
-              decorationStyle: TextDecorationStyle.wavy,
-              decorationColor: Colors.red
-            ),
+                fontSize: 25.0,
+                color: Colors.teal,
+                decoration: TextDecoration.underline,
+                decorationStyle: TextDecorationStyle.wavy,
+                decorationColor: Colors.red),
           ),
         ),
       ),
