@@ -1,6 +1,6 @@
 //底部导航栏页面
 import 'package:flutter/material.dart';
-import 'package:hola_flutter/simple_page.dart';
+import 'package:hola_flutter/pages/simple_page.dart';
 
 class BottomPageWidget extends StatefulWidget {
   BottomPageWidget({Key key}) : super(key: key);
