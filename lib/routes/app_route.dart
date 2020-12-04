@@ -5,6 +5,7 @@ import 'package:hola_flutter/pages/bottom_page.dart';
 import 'package:hola_flutter/pages/canvas_page.dart';
 import 'package:hola_flutter/pages/gesture_page.dart';
 import 'package:hola_flutter/pages/main_page.dart';
+import 'package:hola_flutter/pages/net_page.dart';
 import 'package:hola_flutter/pages/simple_page.dart';
 
 final routes = {
@@ -13,6 +14,7 @@ final routes = {
   '/bottomNavigator': (context) => BottomPageWidget(),
   '/canvas': (context) => CanvasPage(),
   '/gesture': (context) => GesturePage(),
+  '/network': (context) => NetworkPage(),
 };
 
 /// 动态创建路由

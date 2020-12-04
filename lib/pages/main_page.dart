@@ -79,6 +79,18 @@ class MainPage extends StatelessWidget {
                               Navigator.pushNamed(context, "/gesture");
                             },
                           ),
+                          ListTile(
+                            dense: true,
+                            trailing: Icon(
+                              Icons.gesture,
+                              color: Colors.blueGrey,
+                            ),
+                            title: Text("Net work"),
+                            subtitle: Text('网络'),
+                            onTap: () {
+                              Navigator.pushNamed(context, "/network");
+                            },
+                          ),
                         ],
                         color: Colors.grey[300])
                     .toList(),
